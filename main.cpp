@@ -100,7 +100,7 @@ int main(int argn, char** argv)
   }
 
   spv_ifstream.seekg(0, std::ios::end);
-  size_t size = spv_ifstream.tellg();
+  std::streampos size = spv_ifstream.tellg();
   spv_ifstream.seekg(0, std::ios::beg);
 
   {
